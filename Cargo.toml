@@ -1,0 +1,26 @@
+[workspace]
+members = [
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.86.0"
+authors = ["biliticket"]
+description = "Next Generation Transition Ticket"
+license = "GPL-3.0"
+repository = "https://github.com/biliticket/transition-ticket-ng"
+
+[workspace.dependencies]
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0"
+shadow-rs = "1.1"
+
+[profile.release]
+debug = false
+lto = true
+strip = true
+opt-level = 3
+codegen-units = 1
+panic = "abort"
