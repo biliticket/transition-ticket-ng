@@ -5,7 +5,7 @@ resolver = "2"
 
 [workspace.package]
 edition = "2024"
-rust-version = "1.86.0"
+rust-version = "1.87.0"
 authors = ["biliticket"]
 description = "Next Generation Transition Ticket"
 license = "GPL-3.0"
