@@ -1,5 +1,8 @@
 [workspace]
 members = [
+    "app-cli",
+    "app-gui",
+    "app-util"
 ]
 resolver = "2"
 
