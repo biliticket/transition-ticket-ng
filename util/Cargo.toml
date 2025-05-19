@@ -1,5 +1,5 @@
 [package]
-name = "app-cli"
+name = "util"
 version = "0.1.0"
 edition.workspace = true
 rust-version.workspace = true
@@ -9,5 +9,3 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
-app-util = { path = "../app-util", version = "0.1.0" }
-task = { path = "../task", version = "0.1.0" }

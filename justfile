@@ -1,8 +1,8 @@
 run_cmd := "cargo run"
 build_cmd := "cargo build"
 
-app-cli := "-p app-cli"
-app-gui := "-p app-gui"
+app-cli := "-p cli"
+app-gui := "-p gui"
 
 cli:
     {{run_cmd}} {{app-cli}}

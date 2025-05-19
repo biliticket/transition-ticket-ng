@@ -1,7 +1,7 @@
-use app_util;
+use util;
 
 pub fn add(left: u64, right: u64) -> u64 {
-    app_util::add(left, right)
+    util::add(left, right)
 }
 
 #[cfg(test)]
