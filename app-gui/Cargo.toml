@@ -10,3 +10,4 @@ repository.workspace = true
 
 [dependencies]
 app-util = { path = "../app-util", version = "0.1.0" }
+task = { path = "../task", version = "0.1.0" }
