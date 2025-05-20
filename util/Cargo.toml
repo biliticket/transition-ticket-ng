@@ -9,3 +9,7 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
+shadow-rs.workspace = true
+
+[build-dependencies]
+shadow-rs.workspace = true
