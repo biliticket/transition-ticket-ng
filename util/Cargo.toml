@@ -7,8 +7,28 @@ authors.workspace = true
 description.workspace = true
 license.workspace = true
 repository.workspace = true
+build = "build.rs"
 
 [dependencies]
+tokio = { version = "1.45", features = ["full", "tracing"] }
+
+reqwest = { version = "0.12", features = ["blocking", "cookies", "gzip", "json", "rustls-tls", "socks"] }
+reqwest-middleware = { version = "0.4", features = ["http2", "rustls-tls", "charset", "json"] }
+reqwest-retry = "0.7"
+reqwest-tracing = "0.5"
+
+thirtyfour = "0.35"
+config = "0.15"
+
+tracing = "0.1"
+tracing-appender = "0.2"
+tracing-subscriber = { version = "0.3", features = ["time"] }
+sentry = { version = "0.38", features = ["anyhow", "rustls", "sentry-anyhow", "sentry-tracing", "tracing"] }
+
+anyhow.workspace = true
+serde.workspace = true
+serde_json = "1.0"
+thiserror.workspace = true
 shadow-rs.workspace = true
 
 [build-dependencies]

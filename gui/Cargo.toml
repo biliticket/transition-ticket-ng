@@ -7,10 +7,18 @@ authors.workspace = true
 description.workspace = true
 license.workspace = true
 repository.workspace = true
+build = "build.rs"
 
 [dependencies]
-util = { path = "../util", version = "0.1.0" }
-task = { path = "../task", version = "0.1.0" }
+util = { path = "../util", version = "0.1" }
+task = { path = "../task", version = "0.1" }
+
+tokio = { version = "1.45", features = ["full", "tracing"] }
+gpui-component = { git = "https://github.com/longbridge/gpui-component", tag = "v20250502" }
+
+anyhow.workspace = true
+serde.workspace = true
+thiserror.workspace = true
 shadow-rs.workspace = true
 
 [build-dependencies]

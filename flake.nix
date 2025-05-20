@@ -50,6 +50,8 @@
             packages = [
               pkg-config
               openssl
+              wayland
+              xorg.libX11
 
               cargo-binstall
               pre-commit
