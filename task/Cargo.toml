@@ -12,7 +12,9 @@ build = "build.rs"
 [dependencies]
 util = { path = "../util", version = "0.1" }
 
-tokio = { version = "1.45", features = ["full", "tracing"] }
+tokio = { version = "1.45", features = ["rt-multi-thread", "tracing"] }
+async-trait = "0.1"
+
 nanomachine = "0.1"
 bili_ticket_gt = { git = "https://github.com/Amorter/biliTicker_gt", branch = "rust" }
 

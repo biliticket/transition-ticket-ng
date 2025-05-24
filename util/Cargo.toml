@@ -19,6 +19,7 @@ reqwest-tracing = "0.5"
 
 thirtyfour = "0.35"
 config = "0.15"
+dirs = "6.0"
 
 tracing = "0.1"
 tracing-appender = "0.2"
