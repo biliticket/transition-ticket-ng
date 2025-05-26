@@ -50,19 +50,30 @@
             packages = [
               pkg-config
               openssl
-              wayland
-              xorg.libX11
 
               cargo-binstall
               pre-commit
               just
 
               rustToolchain
+
+              expat
+              fontconfig
+              freetype
+              freetype.dev
+              libGL
+              xorg.libX11
+              xorg.libXcursor
+              xorg.libXi
+              xorg.libXrandr
+              wayland
+              libxkbcommon
             ];
 
             env = {
               CARGO_HOME = builtins.toString ".cargo";
               RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
+              LD_LIBRARY_PATH = builtins.foldl' (a: b: "${a}:${b}/lib") "${pkgs.vulkan-loader}/lib" packages;
             };
 
             shellHook = ''
