@@ -25,6 +25,6 @@ shadow-rs = "1.1"
 debug = false
 lto = true
 strip = true
-opt-level = 3
+opt-level = "z"
 codegen-units = 1
 panic = "abort"
