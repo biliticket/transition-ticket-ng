@@ -64,3 +64,5 @@ models
 # Added by cargo
 
 /target
+.direnv
+.cargo
