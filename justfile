@@ -37,8 +37,8 @@ install-dev:
 update:
     nix flake update
     cargo update
-    pre-commit autoupdate
     cargo deny fetch
+    pre-commit autoupdate
 
 doc:
     cargo doc --open --workspace
