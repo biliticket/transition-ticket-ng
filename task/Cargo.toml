@@ -7,7 +7,6 @@ authors.workspace = true
 description.workspace = true
 license.workspace = true
 repository.workspace = true
-build = "build.rs"
 
 [dependencies]
 util = { path = "../util", version = "0.1" }
@@ -21,7 +20,3 @@ bili_ticket_gt = { git = "https://github.com/Amorter/biliTicker_gt", branch = "r
 anyhow.workspace = true
 serde.workspace = true
 thiserror.workspace = true
-shadow-rs.workspace = true
-
-[build-dependencies]
-shadow-rs.workspace = true

@@ -7,6 +7,12 @@ authors.workspace = true
 description.workspace = true
 license.workspace = true
 repository.workspace = true
+build = "build.rs"
 
 [dependencies]
 dioxus = { workspace = true, features = ["fullstack"] }
+
+shadow-rs.workspace = true
+
+[build-dependencies]
+shadow-rs.workspace = true
