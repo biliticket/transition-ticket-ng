@@ -14,7 +14,7 @@ members = [
 resolver = "3"
 
 [workspace.package]
-edition = "2024"
+version = "0.1.0"
 rust-version = "1.87.0"
 authors = ["biliticket"]
 description = "Next Generation Transition Ticket"
