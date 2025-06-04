@@ -18,7 +18,7 @@ shadow-rs = { version = "1.1", default-features = false }
 shadow-rs = "1.1"
 
 [features]
-default = []
+default = ["desktop"]
 desktop = ["dioxus/desktop"]
 web = ["dioxus/web"]
 mobile = ["dioxus/mobile"]
