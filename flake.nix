@@ -69,6 +69,7 @@
               CARGO_HOME = builtins.toString ".cargo";
               RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
               LD_LIBRARY_PATH = builtins.foldl' (a: b: "${a}:${b}/lib") "${pkgs.vulkan-loader}/lib" packages;
+              __NV_DISABLE_EXPLICIT_SYNC = 1;
             };
 
             shellHook = ''
