@@ -1,13 +1,7 @@
 [workspace]
 members = [
     "cli",
-
-    "desktop",
-    "mobile",
-    "web",
-    "ui",
-    "api",
-
+    "gui",
     "task",
     "util",
 ]
@@ -25,9 +19,7 @@ repository = "https://github.com/biliticket/transition-ticket-ng"
 
 [workspace.dependencies]
 anyhow = "1.0"
-dioxus = "0.6"
 serde = { version = "1.0", features = ["derive"] }
-shadow-rs = "1.1"
 thiserror = "2.0"
 
 [patch.crates-io]

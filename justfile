@@ -13,19 +13,19 @@ build-cli:
 release-cli:
     {{build_cmd}} {{app-cli}} --release
 
-[working-directory: "desktop"]
+[working-directory: "gui"]
 desktop:
-    {{dx_cmd}}
+    {{dx_cmd}} --platform desktop
 
-[working-directory: "web"]
+[working-directory: "gui"]
 web:
-    {{dx_cmd}}
+    {{dx_cmd}} --platform web
 
-[working-directory: "mobile"]
+[working-directory: "gui"]
 android:
     {{dx_cmd}} --platform android
 
-[working-directory: "mobile"]
+[working-directory: "gui"]
 ios:
     {{dx_cmd}} --platform ios
 

@@ -18,20 +18,6 @@
 
 黄牛 / 收费代抢４０００＋
 
-### 项目结构
-
-```bash
-Transition-Ticket-NG/
-├─ desktop/          # 桌面
-├─ mobile/           # 移动端
-├─ web/              # Web
-├─ ui/               # 共享组件
-├─ api/              # 共享逻辑
-├─ cli/              # CLI
-├─ task/             # 任务
-├─ util/             # 工具
-```
-
 ## 开发
 
 - [Rustup](https://rustup.rs/)
