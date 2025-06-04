@@ -10,8 +10,8 @@ repository.workspace = true
 build = "build.rs"
 
 [dependencies]
-util = { path = "../util", version = "0.1" }
-task = { path = "../task", version = "0.1" }
+util = { path = "../util" }
+task = { path = "../task" }
 
 tokio = { version = "1.45", features = ["full", "tracing"] }
 clap = { version = "4.5", features = ["derive", "env", "unicode", "wrap_help"] }

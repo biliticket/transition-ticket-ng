@@ -10,7 +10,7 @@ repository.workspace = true
 
 [dependencies]
 dioxus = { workspace = true, features = ["router"] }
-ui = { workspace = true }
+ui = { path = "../ui" }
 
 [features]
 default = []

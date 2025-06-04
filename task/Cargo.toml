@@ -9,7 +9,7 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
-util = { path = "../util", version = "0.1" }
+util = { path = "../util" }
 
 tokio = { version = "1.45", features = ["rt-multi-thread", "tracing"] }
 async-trait = "0.1"

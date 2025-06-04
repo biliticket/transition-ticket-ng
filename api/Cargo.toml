@@ -10,6 +10,9 @@ repository.workspace = true
 build = "build.rs"
 
 [dependencies]
+util = { path = "../util" }
+task = { path = "../task" }
+
 dioxus = { workspace = true, features = ["fullstack"] }
 
 shadow-rs.workspace = true
