@@ -68,7 +68,12 @@ just release
 
 # 运行
 just cli
-just gui
+just desktop
+just web
+
+# 移动端[WIP]
+just android
+just ios
 
 # 更新
 just update
