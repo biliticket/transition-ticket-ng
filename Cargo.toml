@@ -1,6 +1,13 @@
 [workspace]
 members = [
     "cli",
+
+    "desktop",
+    "mobile",
+    "web",
+    "ui",
+    "api",
+
     "task",
     "util",
 ]
@@ -20,6 +27,9 @@ serde = { version = "1.0", features = ["derive"] }
 thiserror = "2.0"
 shadow-rs = "1.1"
 
+dioxus = "0.6"
+ui = { path = "ui" }
+
 [patch.crates-io]
 ort = { git="https://github.com/biliticket/ort" }
 ort-sys = { git = "https://github.com/biliticket/ort" }
@@ -31,3 +41,13 @@ strip = true
 opt-level = 3
 codegen-units = 1
 panic = "abort"
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

@@ -1,0 +1,18 @@
+[package]
+name = "mobile"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+dioxus = { workspace = true, features = ["router"] }
+ui = { workspace = true }
+
+[features]
+default = []
+mobile = ["dioxus/mobile"]
+server = ["dioxus/server"]

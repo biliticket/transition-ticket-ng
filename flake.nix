@@ -38,6 +38,7 @@
                     "clippy"
                     "cargo"
                   ];
+                  targets = [ "wasm32-unknown-unknown" ];
                 };
           })
         ];
@@ -48,26 +49,20 @@
           with pkgs;
           mkShell rec {
             packages = [
-              pkg-config
               openssl
+              pkg-config
 
               cargo-binstall
               pre-commit
               just
-
               rustToolchain
 
-              expat
-              fontconfig
-              freetype
-              freetype.dev
-              libGL
-              xorg.libX11
-              xorg.libXcursor
-              xorg.libXi
-              xorg.libXrandr
-              wayland
-              libxkbcommon
+              glib
+              gtk3
+              libiconv
+              libsoup_3
+              webkitgtk_4_1
+              xdotool
             ];
 
             env = {

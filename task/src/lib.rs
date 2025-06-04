@@ -2,10 +2,6 @@ pub mod cpp;
 pub mod hyg;
 pub mod platform;
 
-pub use cpp::*;
-pub use hyg::*;
-pub use platform::*;
-
 pub fn add(left: u64, right: u64) -> u64 {
     util::add(left, right)
 }

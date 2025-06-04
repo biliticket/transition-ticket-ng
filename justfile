@@ -1,14 +1,11 @@
 run_cmd := "cargo run"
 build_cmd := "cargo build"
+dx_cmd := "dx serve"
 
 app-cli := "-p cli"
-app-gui := "-p gui"
 
 cli:
     {{run_cmd}} {{app-cli}}
-
-gui:
-    {{run_cmd}} {{app-gui}}
 
 build-cli:
     {{build_cmd}} {{app-cli}}
@@ -16,22 +13,32 @@ build-cli:
 release-cli:
     {{build_cmd}} {{app-cli}} --release
 
-build-gui:
-    {{build_cmd}} {{app-gui}}
+[working-directory: "desktop"]
+desktop:
+    {{dx_cmd}}
 
-release-gui:
-    {{build_cmd}} {{app-gui}} --release
+[working-directory: "web"]
+web:
+    {{dx_cmd}}
 
-build: build-cli build-gui
+[working-directory: "mobile"]
+android:
+    {{dx_cmd}} --platform android
 
-release: release-cli release-gui
+[working-directory: "mobile"]
+ios:
+    {{dx_cmd}} --platform ios
+
+build: build-cli
+
+release: release-cli
 
 fmt:
     cargo fmt
     pre-commit run --all-files
 
 install-dev:
-    cargo binstall cargo-deny cargo-nextest -y --force
+    cargo binstall cargo-deny cargo-nextest dioxus-cli -y --force
     cargo deny fetch
 
 update:

@@ -8,3 +8,6 @@ components = [
     "clippy",
     "cargo"
 ]
+targets = [
+    "wasm32-unknown-unknown"
+]
